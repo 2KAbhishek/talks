@@ -1,4 +1,4 @@
-# Be a 10X
+# Be a "10X"
 
 > **Abhishek Keshri**
 
@@ -58,6 +58,8 @@ Who's not a 10X developer?
 
 ## How do I become a 10X?
 
+- Start looking for good role models
+- Try to make your team as productive as possible
 - Have everything on Git
 - Have CI/CD pipelines for own projects
 - Explore new technologies and environments
