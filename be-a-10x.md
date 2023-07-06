@@ -27,22 +27,14 @@ Who's not a 10X developer?
 
 ---
 
-## Guidelines
-
-- Skills > ChatGPT
-- Knowledge > Hearsay
-- Facts > Feelings
-- Evidence > Emotion
-- Teamwork > Tantrums
-- Steady Progress > Highs and Lows
-- Working Code > Everything
-
----
-
 ## What are the qualities of a 10X?
 
 - They do one thing at a time
 - They constantly achieve small wins
+- They understand that code is ephemeral, solution is long term
+- Understands that delivering value is a team sport
+- Actively seek and provide feedback
+- The take control of their environment by building their own toolbox
 
 ---
 
@@ -69,10 +61,22 @@ Who's not a 10X developer?
 - Find the sharp edges
 - Read the fine print
 - Write tests with your code
-- Being able to easily experiment
+- Being able to take risks and easily experiment
 - Always delivering value, no matter how small
 - They always crave for feedback that gives actionable intelligence
 - They create their own developer experience
+
+---
+
+## Guidelines
+
+- Skills > ChatGPT
+- Knowledge > Hearsay
+- Facts > Feelings
+- Evidence > Emotion
+- Teamwork > Tantrums
+- Steady Progress > Highs and Lows
+- Working Code > Everything
 
 ---
 
