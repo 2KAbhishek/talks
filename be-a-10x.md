@@ -10,7 +10,7 @@ What do you want to be?
 
 ---
 
-being a 10x developer isn't about having superpowers — it’s about using the powers you already have in wiser, more considered ways
+Being a 10x developer isn't about having superpowers — it’s about using the powers you already have in wiser, more considered ways
 
 ---
 
