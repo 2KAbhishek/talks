@@ -16,7 +16,14 @@ being a 10x developer isn't about having superpowers — it’s about using the 
 
 ## Who is a 10X?
 
-Some examples
+Do you know a 10X developer?
+- Do they write 10X code
+- Do they fix 10X bugs
+- Do they work 800 hours a week
+
+Who's not a 10X developer?
+
+- Someone who has special powers? a secret identity?
 
 ---
 
