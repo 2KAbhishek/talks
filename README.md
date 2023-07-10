@@ -20,78 +20,38 @@
 <a href="https://github.com/2KAbhishek/talks/pulse">
 <img alt="Last Updated" src="https://img.shields.io/github/last-commit/2kabhishek/talks?style=flat&color=e06c75&label="> </a>
 
-<h3>Short Sweet Headline 🎇🎉</h3>
-
-<figure>
-  <img src="images/screenshot.png" alt="talks in action">
-  <br/>
-  <figcaption>talks in action</figcaption>
-</figure>
+<h3>Talks I have done 🎁📢</h3>
 
 </div>
 
-talks is a `<utility/tool>` that allows `<target_audience>` to `<action>`.
+This repo hosts the content of all the talks I'll be doing.
 
-## ✨ Features
+My tool of choice is [slides](https://github.com/maaslalani/slides)
 
-- Supports foo
-- Can do bar
-- Works with bazz
 
-## Setup
-
-### ⚡ Requirements
-
-- foo >= bar
-- bazz
-
-### 🚀 Installation
+### 🚀 Getting Talks
 
 ```bash
 git clone https://github.com/2kabhishek/talks
 cd talks
-<install_command>
-```
-
-### 💻 Usage
-
-```bash
-USAGE:
-    talks [FLAGS] [OPTIONS]
-Example:
-    talks
+slides <talk-filename.md>
 ```
 
 ## What's Next
 
-Planning to add `<feature/module>`.
-
-### ✅ To-Do
-
-- [x] Setup repo
-- [ ] Think real hard
-- [ ] Start typing
+Planning to add more talks.
 
 ##  Behind The Code
 
 ### 🌈 Inspiration
 
-talks was inspired by `<reason/idea>`.
-
-### 💡 Challenges/Learnings
-
-- The main challenges were `<issue/difficulty>`
-- I learned about `<learning/accomplishment>`
+Wanted a easy way to share my talks.
 
 ### 🧰 Tooling
 
 - [Dotfiles](https://github.com/2kabhishek/Dotfiles) — Dev Environment
 - [nvim2k](https://github.com/2kabhishek/nvim2k) — Personalized Editor
 - [awesome2k](https://github.com/2kabhishek/awesome2k) — Tiling Window Manager
-
-### 🔍 More Info
-
-- [similar](https://github.com/2kabhishek/similar) — a related repo
 
 <hr>
 
