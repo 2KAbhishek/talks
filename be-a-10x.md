@@ -29,17 +29,6 @@ Who's not a 10X developer?
 
 ---
 
-## What are the qualities of a 10X?
-
-- They do one thing at a time
-- They constantly achieve small wins
-- They understand that code is ephemeral, solution is long term
-- Understands that delivering value is a team sport
-- Actively seek and provide feedback
-- The take control of their environment by building their own toolbox
-
----
-
 ## Rules
 
 1. Delivers high quality code **on time** that does **only** what is necessary
@@ -50,11 +39,21 @@ Who's not a 10X developer?
 
 ---
 
+## What are the qualities of a 10X?
+
+- They do one thing at a time
+- They constantly achieve small wins
+- They understand that code is ephemeral, solution is long term
+- They actively seek and provide feedback
+- They take control of their environment by building their own toolbox
+
+---
+
 ## How do I become a 10X?
 
 - Start looking for good role models
 - Try to make your team as productive as possible
-- Have everything on Git
+- Have everything on git
 
 ---
 
