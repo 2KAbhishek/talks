@@ -1,6 +1,6 @@
 # Be a "10X"
 
-> **Abhishek Keshri**
+**Abhishek Keshri**
 
 ---
 
@@ -10,7 +10,9 @@ What do you want to be?
 
 ---
 
-Being a 10x developer isn't about having superpowers — it’s about using the powers you already have in wiser, more considered ways
+### Being a 10x developer isn't about having superpowers
+
+It’s about using the powers you already have in wiser, more considered ways
 
 ---
 
@@ -19,7 +21,7 @@ Being a 10x developer isn't about having superpowers — it’s about using the 
 Do you know a 10X developer?
 - Do they write 10X code
 - Do they fix 10X bugs
-- Do they work 800 hours a week
+- Do they work 400 hours a week
 
 Who's not a 10X developer?
 
@@ -53,15 +55,27 @@ Who's not a 10X developer?
 - Start looking for good role models
 - Try to make your team as productive as possible
 - Have everything on Git
+
+---
+
 - Have CI/CD pipelines for own projects
 - Explore new technologies and environments
 - Intentionally break test and pipeline
+
+---
+
 - Become knowledgeable in the new API
 - Document everything
 - Find the sharp edges
+
+---
+
 - Read the fine print
 - Write tests with your code
 - Being able to take risks and easily experiment
+
+---
+
 - Always delivering value, no matter how small
 - They always crave for feedback that gives actionable intelligence
 - They create their own developer experience
@@ -82,11 +96,13 @@ Who's not a 10X developer?
 
 ## References
 
-- [productivity-engineering](https://gradle.com/developer-productivity-engineering/)
-- [talk](https://saltmarch.com/watch/superman-or-ironman-can-everyone-be-a-10x-developer)
+- [gradle-productivity-engineering](https://gradle.com/developer-productivity-engineering/)
+- [talk-notes](https://github.com/2kabhishek/talks)
 
 ---
 
 ## Thanks
 
 Inspired by **Steve Poole**
+
+[original-talk](https://saltmarch.com/watch/superman-or-ironman-can-everyone-be-a-10x-developer)
