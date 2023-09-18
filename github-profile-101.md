@@ -34,4 +34,5 @@
 ## Thanks
 
 [My Profile](https://github.com/2kabhishek/)
+[Link to slides](https://github.com/2KAbhishek/talks/blob/main/github-profile-101.md)
 
