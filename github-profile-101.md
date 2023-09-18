@@ -14,7 +14,7 @@
 
 ---
 
-## What is needed for a good GitHub profie
+## What is needed for a good GitHub profile
 
 - Bio
 - Profile picture
