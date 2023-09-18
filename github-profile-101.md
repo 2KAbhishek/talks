@@ -33,7 +33,7 @@
 
 ## Thanks
 
-[My Profile](https://github.com/2kabhishek/)
+[My Profile](https://github.com/2KAbhishek/)
 
 [Link to slides](https://github.com/2KAbhishek/talks/blob/main/github-profile-101.md)
 
