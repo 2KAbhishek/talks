@@ -51,7 +51,6 @@ Wanted a easy way to share my talks.
 
 - [Dotfiles](https://github.com/2kabhishek/Dotfiles) — Dev Environment
 - [nvim2k](https://github.com/2kabhishek/nvim2k) — Personalized Editor
-- [awesome2k](https://github.com/2kabhishek/awesome2k) — Tiling Window Manager
 
 <hr>
 
