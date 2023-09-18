@@ -1,6 +1,7 @@
 # GitHub Profiles 101
 
-> Why did the Craftsperson have a great GitHub profile? Because they knew how to 'commit' to success!
+> Why did the Craftsperson have a great GitHub profile?
+Because they knew how to 'commit' to success!
 
 ---
 
