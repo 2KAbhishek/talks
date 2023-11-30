@@ -4,8 +4,6 @@
 
 > Efficiency? Customizability? Fun?
 
----
-
 ```lua
 local about_me = {
     name = "Abhishek Keshri"
@@ -35,7 +33,7 @@ Lazy loading loads a plugin only if certain **condtions** are met.
 
 ## Why should I care?
 
-Gives you plugin less Nevoim like startup times!
+Makes your neovim experience **blazingly fast** _without_ losing out on functionality.
 
 ### Stats
 
@@ -46,8 +44,6 @@ For 79 plugins it gives me ~**10X** Faster startup times
 - Windows System: ~**400 ms** -> ~**42 ms**
 - Android Phone: ~**660 ms** -> ~**56 ms**
 - Android Tablet: ~**1150 ms** -> ~**106 ms**
-
-> If a plugin breaks during an upgrade, it won't affect your workflow
 
 ---
 
@@ -70,7 +66,7 @@ For 79 plugins it gives me ~**10X** Faster startup times
   - Plugins that depend on of functioning LSP
   - `lsp-saga`, `lsp-lines`
 
-- **VeryLazy**: Loaded at the end of lazy lifecycle (*:Lazy profile*)
+- **VeryLazy**: Loaded at the end of lazy lifecycle (_:Lazy profile_)
   - Plugins that should be loaded, but are not priority, also useful for conditional loads
   - `which-key`, `notify`, `tmux`
 
@@ -80,11 +76,11 @@ For 79 plugins it gives me ~**10X** Faster startup times
 
 > Plugins that you want to load when a specific command is triggered
 
-- `nvim-tree`: *cmd = 'NvimTreeToggle'*
-- `telescope`: *cmd = 'Telescope'*
-- `co-author`: *cmd = GitCoAuthors*
-- `nerdy`: *cmd = Nerdy*
-- `ccc`: *cmd = { 'CccHighlighterToggle', 'CccConvert', 'CccPick' }*
+- `nvim-tree`: _cmd = 'NvimTreeToggle'_
+- `telescope`: _cmd = 'Telescope'_
+- `co-author`: _cmd = GitCoAuthors_
+- `nerdy`: _cmd = Nerdy_
+- `ccc`: _cmd = { 'CccHighlighterToggle', 'CccConvert', 'CccPick' }_
 
 ---
 
@@ -92,8 +88,8 @@ For 79 plugins it gives me ~**10X** Faster startup times
 
 > Plugins that you want to load on specific key press
 
-- `wilder`: *keys = { ':', '/', '?', }*
-- `surround`: *keys = { 'cs', 'ds', 'ys' }*
+- `wilder`: _keys = { ':', '/', '?', }_
+- `surround`: _keys = { 'cs', 'ds', 'ys' }_
 - `comment`
 - `flash`
 
@@ -103,11 +99,11 @@ For 79 plugins it gives me ~**10X** Faster startup times
 
 > Plugins that you want to load for specific file types
 
-- `neodev`: *ft = { 'lua', 'vim' }*
-- `rails`: *ft = 'ruby'*
-- `markdown-preview`: *ft = 'markdown', cmd = 'MarkdownPreviewToggle'*
+- `neodev`: _ft = { 'lua', 'vim' }_
+- `rails`: _ft = 'ruby'_
+- `markdown-preview`: _ft = 'markdown', cmd = 'MarkdownPreviewToggle'_
 
-> Lazy loading conditions can be combined
+> Lazy loading conditions can be _combined_
 
 ---
 
@@ -120,6 +116,7 @@ For 79 plugins it gives me ~**10X** Faster startup times
 [Link to slides](https://github.com/2KAbhishek/talks/blob/main/the-laziest-neovim.md)
 
 ---
+
 # That's All Folks!
 
 [2KAbhishek@GitHub](https://github.com/2KAbhishek)
@@ -127,4 +124,3 @@ For 79 plugins it gives me ~**10X** Faster startup times
 [2KAbhishek@Twitter](https://twitter.com/2KAbhishek)
 
 [2KAbhishek@YouTube](https://youtube.com/2KAbhishek)
-
