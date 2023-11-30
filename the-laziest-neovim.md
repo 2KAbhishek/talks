@@ -1,9 +1,5 @@
 # The Laziest Neovim
 
-**Why do you use Neovim?**
-
-> Efficiency? Customizability? Fun?
-
 ```lua
 local about_me = {
     name = "Abhishek Keshri"
@@ -18,16 +14,27 @@ local about_me = {
 
 ---
 
+## Why do you use Neovim?
+
+- Efficiency?
+- Customizability?
+- Fun?
+- Need for speed?
+- I use neovim btw?
+- All of the above!
+
+---
+
 ## What is lazy loading anyway?
 
 > !eager loading
 
-Lazy loading loads a plugin only if certain **condtions** are met.
+Lazy loading is a strategy to load a plugin only on certain **conditions**.
 
 - Events
 - Commands
-- Key Press
-- Filetype
+- Keys
+- File Types
 
 ---
 
@@ -37,7 +44,7 @@ Makes your neovim experience **blazingly fast** _without_ losing out on function
 
 ### Stats
 
-For 79 plugins it gives me ~**10X** Faster startup times
+For 79 plugins it gives me ~**10X** faster startup times
 
 - Linux Workstation: ~**300ms** -> **~28 ms**
 - M2 Mini: ~**360 ms** -> **~32 ms**
@@ -49,7 +56,7 @@ For 79 plugins it gives me ~**10X** Faster startup times
 
 ## Events
 
-> :help events
+> Load plugins on specific events
 
 - **BufReadPre**, **BufNewFile**: Triggered before reading a file into buffer.
 
@@ -70,11 +77,13 @@ For 79 plugins it gives me ~**10X** Faster startup times
   - Plugins that should be loaded, but are not priority, also useful for conditional loads
   - `which-key`, `notify`, `tmux`
 
+> _:help events_
+
 ---
 
 ## Commands
 
-> Plugins that you want to load when a specific command is triggered
+> Load plugins on specific commands
 
 - `nvim-tree`: _cmd = 'NvimTreeToggle'_
 - `telescope`: _cmd = 'Telescope'_
@@ -84,9 +93,9 @@ For 79 plugins it gives me ~**10X** Faster startup times
 
 ---
 
-## Key Press
+## Keys
 
-> Plugins that you want to load on specific key press
+> Load plugins on specific keys
 
 - `wilder`: _keys = { ':', '/', '?', }_
 - `surround`: _keys = { 'cs', 'ds', 'ys' }_
@@ -95,9 +104,9 @@ For 79 plugins it gives me ~**10X** Faster startup times
 
 ---
 
-## Filetype
+## File Types
 
-> Plugins that you want to load for specific file types
+> Load plugins for specific file types
 
 - `neodev`: _ft = { 'lua', 'vim' }_
 - `rails`: _ft = 'ruby'_
