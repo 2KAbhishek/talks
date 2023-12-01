@@ -16,7 +16,6 @@ local about_me = {
 
 ## Why do you use Neovim?
 
-- Efficiency? 󰈏
 - Blazingly fast? 󱓞
 - Personalisation? 
 - Fun? 
@@ -52,7 +51,7 @@ For 79 plugins it gives me ~**10X** faster startup times
 - Android Phone: ~**660 ms** -> ~**56 ms** 
 - Android Tablet: ~**1150 ms** -> ~**106 ms** 
 
-> _nvim --startup-time >> startup.log_
+> _nvim --startuptime startup.log_
 
 ---
 
