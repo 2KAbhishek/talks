@@ -1,4 +1,4 @@
-# The Laziest Neovim
+# The Laziest Neovim 
 
 ```lua
 local about_me = {
@@ -16,12 +16,12 @@ local about_me = {
 
 ## Why do you use Neovim?
 
-- Efficiency?
-- Customizability?
-- Fun?
-- Need for speed?
-- I use neovim btw?
-- All of the above!
+- Efficiency? 󰈏
+- Customizability? 
+- Fun? 
+- Blazingly fast ? 󱓞
+- I use neovim btw? 󰱫
+- All of the above! 
 
 ---
 
@@ -31,10 +31,10 @@ local about_me = {
 
 Lazy loading is a strategy to load a plugin only on certain **conditions**.
 
-- Events
-- Commands
-- Keys
-- File Types
+- Events 
+- Commands 
+- Keys 
+- File Types 
 
 ---
 
@@ -42,19 +42,19 @@ Lazy loading is a strategy to load a plugin only on certain **conditions**.
 
 Makes your neovim experience **blazingly fast** _without_ losing out on functionality.
 
-### Stats
+### Stats 
 
 For 79 plugins it gives me ~**10X** faster startup times
 
-- Linux Workstation: ~**300ms** -> **~28 ms**
-- M2 Mini: ~**360 ms** -> **~32 ms**
-- Windows System: ~**400 ms** -> ~**42 ms**
-- Android Phone: ~**660 ms** -> ~**56 ms**
-- Android Tablet: ~**1150 ms** -> ~**106 ms**
+- Linux Workstation: ~**300ms** -> **~28 ms** 
+- M2 Mini: ~**360 ms** -> **~32 ms** 
+- Windows System: ~**400 ms** -> ~**42 ms** 
+- Android Phone: ~**660 ms** -> ~**56 ms** 
+- Android Tablet: ~**1150 ms** -> ~**106 ms** 
 
 ---
 
-## Events
+## Events 
 
 > Load plugins on specific events
 
@@ -81,7 +81,7 @@ For 79 plugins it gives me ~**10X** faster startup times
 
 ---
 
-## Commands
+## Commands 
 
 > Load plugins on specific commands
 
@@ -93,7 +93,7 @@ For 79 plugins it gives me ~**10X** faster startup times
 
 ---
 
-## Keys
+## Keys 
 
 > Load plugins on specific keys
 
@@ -104,7 +104,7 @@ For 79 plugins it gives me ~**10X** faster startup times
 
 ---
 
-## File Types
+## File Types 
 
 > Load plugins for specific file types
 
@@ -116,7 +116,7 @@ For 79 plugins it gives me ~**10X** faster startup times
 
 ---
 
-## Links
+## Links 
 
 [nvim2k](https://github.com/2KAbhishek/nvim2k)
 
@@ -126,7 +126,7 @@ For 79 plugins it gives me ~**10X** faster startup times
 
 ---
 
-# That's All Folks!
+# That's All Forks! 
 
 [2KAbhishek@GitHub](https://github.com/2KAbhishek)
 
