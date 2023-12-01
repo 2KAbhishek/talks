@@ -2,13 +2,13 @@
 
 ```lua
 local about_me = {
-    name = "Abhishek Keshri"
-    alias = "2KAbhishek"
-    job = "Tech Lead @ Incubyte"
-    shell = "zsh | powershell"
-    os = "linux | macos | windows | android"
-    terminal = "foot | iterm | windows terminal | termux"
-    language = "ruby, typescript, python, bash, lua and more..."
+    name = "Abhishek Keshri",
+    alias = "2KAbhishek",
+    job = "Tech Lead @ Incubyte",
+    shell = "zsh | powershell",
+    os = "linux | macos | windows | android",
+    terminal = "foot | iterm | windows terminal | termux",
+    language = "ruby, typescript, python, bash, lua and more...",
 }
 ```
 
@@ -17,9 +17,9 @@ local about_me = {
 ## Why do you use Neovim?
 
 - Efficiency? 󰈏
-- Customizability? 
-- Fun? 
 - Blazingly fast ? 󱓞
+- Personalisation? 
+- Fun? 
 - I use neovim btw? 󰱫
 - All of the above! 
 
@@ -56,7 +56,7 @@ For 79 plugins it gives me ~**10X** faster startup times
 
 ## Events 
 
-> Load plugins on specific events
+> Load plugins on specific events _:help events_
 
 - **BufReadPre**, **BufNewFile**: Triggered before reading a file into buffer.
 
@@ -68,16 +68,14 @@ For 79 plugins it gives me ~**10X** faster startup times
   - Plugins that are used in insert mode
   - `cmp`, `copilot`, `LuaSnip`, `autopairs`
 
-- **LspAttach**: Triggered after Lsp is active
+- **LspAttach**: Triggered after LSP is active
 
   - Plugins that depend on of functioning LSP
   - `lsp-saga`, `lsp-lines`
 
-- **VeryLazy**: Loaded at the end of lazy lifecycle (_:Lazy profile_)
-  - Plugins that should be loaded, but are not priority, also useful for conditional loads
+- **VeryLazy**: Loaded at the end of lazy life cycle (_:Lazy profile_)
+  - Plugins that should be loaded, but are not priority
   - `which-key`, `notify`, `tmux`
-
-> _:help events_
 
 ---
 
@@ -118,18 +116,14 @@ For 79 plugins it gives me ~**10X** faster startup times
 
 ## Links 
 
-[nvim2k](https://github.com/2KAbhishek/nvim2k)
-
-[lazy spec](https://github.com/2KAbhishek/nvim2k/blob/main/lua/plugins/list.lua)
-
-[Link to slides](https://github.com/2KAbhishek/talks/blob/main/the-laziest-neovim.md)
+- [nvim2k](https://github.com/2KAbhishek/nvim2k)
+- [lazy spec](https://github.com/2KAbhishek/nvim2k/blob/main/lua/plugins/list.lua)
+- [slides](https://github.com/2KAbhishek/talks/blob/main/the-laziest-neovim.md)
 
 ---
 
 # That's All Forks! 
 
-[2KAbhishek@GitHub](https://github.com/2KAbhishek)
-
-[2KAbhishek@Twitter](https://twitter.com/2KAbhishek)
-
-[2KAbhishek@YouTube](https://youtube.com/2KAbhishek)
+- [GitHub](https://github.com/2KAbhishek)
+- [Twitter](https://twitter.com/2KAbhishek)
+- [YouTube](https://youtube.com/2KAbhishek)
