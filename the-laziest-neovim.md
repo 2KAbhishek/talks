@@ -17,7 +17,7 @@ local about_me = {
 ## Why do you use Neovim?
 
 - Efficiency? 󰈏
-- Blazingly fast ? 󱓞
+- Blazingly fast? 󱓞
 - Personalisation? 
 - Fun? 
 - I use neovim btw? 󰱫
@@ -52,6 +52,8 @@ For 79 plugins it gives me ~**10X** faster startup times
 - Android Phone: ~**660 ms** -> ~**56 ms** 
 - Android Tablet: ~**1150 ms** -> ~**106 ms** 
 
+> _nvim --startup-time >> startup.log_
+
 ---
 
 ## Events 
@@ -85,8 +87,8 @@ For 79 plugins it gives me ~**10X** faster startup times
 
 - `nvim-tree`: _cmd = 'NvimTreeToggle'_
 - `telescope`: _cmd = 'Telescope'_
-- `co-author`: _cmd = GitCoAuthors_
-- `nerdy`: _cmd = Nerdy_
+- `co-author`: _cmd = 'CoAuthors'_
+- `nerdy`: _cmd = 'Nerdy'_
 - `ccc`: _cmd = { 'CccHighlighterToggle', 'CccConvert', 'CccPick' }_
 
 ---
