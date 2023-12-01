@@ -8,7 +8,7 @@ local about_me = {
     shell = "zsh | powershell",
     os = "linux | macos | windows | android",
     terminal = "foot | iterm | windows terminal | termux",
-    language = "ruby, typescript, python, bash, lua and more...",
+    language = "ruby, typescript, python, bash, lua ...",
 }
 ```
 
