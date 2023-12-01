@@ -86,7 +86,7 @@ For 79 plugins it gives me ~**10X** faster startup times
 
 - `nvim-tree`: _cmd = 'NvimTreeToggle'_
 - `telescope`: _cmd = 'Telescope'_
-- `co-author`: _cmd = 'CoAuthors'_
+- `co-author`: _cmd = 'CoAuthor'_
 - `nerdy`: _cmd = 'Nerdy'_
 - `ccc`: _cmd = { 'CccHighlighterToggle', 'CccConvert', 'CccPick' }_
 
