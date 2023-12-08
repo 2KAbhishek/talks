@@ -120,6 +120,7 @@ For 79 plugins it gives me ~**10X** faster startup times
 - [nvim2k](https://github.com/2KAbhishek/nvim2k)
 - [lazy spec](https://github.com/2KAbhishek/nvim2k/blob/main/lua/plugins/list.lua)
 - [slides](https://github.com/2KAbhishek/talks/blob/main/the-laziest-neovim.md)
+- [video](https://youtu.be/FMa3eURbgQ8)
 
 ---
 
