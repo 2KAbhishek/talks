@@ -35,14 +35,12 @@ git rebase -i <base_commit>
 
 - **Pick (p):** Keep the commit as is.
 - **Reword (r):** Change the commit message.
-- **Edit (e):** Pause for changes.
 - **Squash (s):** Combine with the previous commit.
 - **Fixup (f):** Similar to squash, discarding the commit message.
 - **Drop (d):** Remove the commit.
+- **Edit (e):** Pause for changes.
 
-Example:
-`pick 8d8a069 feat: implement X`
-`squash 3a4e51b fix: issue in X`
+> *DEMO*
 
 ---
 
