@@ -18,9 +18,9 @@ Master the art of crafting a clean and cohesive commit history
 
 ## Start Interactive Rebase 
 
-```bash
-git rebase -i <base_commit>
-```
+Command: `git rebase -i <base_commit>`
+
+> <base_commit> is where you want to start rebase from
 
 ---
 
@@ -42,7 +42,7 @@ git rebase -i <base_commit>
 1. **Keep It Simple:** Aim for clear, concise commits.
 2. **Logical Order:** Arrange commits for logical flow.
 3. **Use Edit Wisely:** Make necessary changes, but avoid unnecessary alterations.
-4. **Regular Rebasings:** Keep feature branches up-to-date with the main branch.
+4. **Regular Rebasing:** Keep feature branches up-to-date with the main branch.
 
 ---
 
@@ -64,4 +64,3 @@ git rebase -i <base_commit>
 ---
 
 ## Thanks 
-
