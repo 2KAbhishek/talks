@@ -1,4 +1,4 @@
-# Git Interactive Rebase Guide
+# Git Interactive Rebase Guide 
 
 **Abhishek Keshri**
 
@@ -6,24 +6,17 @@ Master the art of crafting a clean and cohesive commit history
 
 ---
 
-### Why Git Interactive Rebase?
-
-- **Squashing Commits:** Combine multiple commits into one for a cleaner history.
-- **Reordering Commits:** Rearrange commits for logical progression.
-- **Editing Commits:** Amend commit messages or changes.
-
----
-
-## Use Cases
+## Use Cases 
 
 1. **Cleaning Up History:** Remove unnecessary commits.
-2. **Feature Branch Refinement:** Polish feature branches before merging.
-3. **Interactive Squashing:** Condense multiple commits into a single, cohesive one.
-4. **Fixing Mistakes:** Edit or reorder commits to rectify errors.
+2. **Reordering Commits:** Rearrange commits for logical progression.
+3. **Feature Branch Refinement:** Polish feature branches before merging.
+4. **Interactive Squashing:** Condense multiple commits into a single, cohesive one.
+5. **Fixing Mistakes:** Edit or reorder commits to rectify errors.
 
 ---
 
-## Start Interactive Rebase
+## Start Interactive Rebase 
 
 ```bash
 git rebase -i <base_commit>
@@ -31,7 +24,7 @@ git rebase -i <base_commit>
 
 ---
 
-## Actions
+## Actions 
 
 - **Pick (p):** Keep the commit as is.
 - **Reword (r):** Change the commit message.
@@ -40,11 +33,11 @@ git rebase -i <base_commit>
 - **Drop (d):** Remove the commit.
 - **Edit (e):** Pause for changes.
 
-> *DEMO*
+> _DEMO_
 
 ---
 
-## Best Practices
+## Best Practices 
 
 1. **Keep It Simple:** Aim for clear, concise commits.
 2. **Logical Order:** Arrange commits for logical flow.
@@ -53,7 +46,7 @@ git rebase -i <base_commit>
 
 ---
 
-## Tips for Success
+## Tips for Success 
 
 - **Backup:** Always create a backup branch before rebasing.
 - **Collaboration:** Communicate with your team before rebasing shared branches.
@@ -61,11 +54,14 @@ git rebase -i <base_commit>
 
 ---
 
-## References
+## References 
 
 - [Git Interactive Rebase Documentation](https://git-scm.com/docs/git-rebase#_interactive_mode)
-- [Pro Git Book - Rewriting History](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History)
+- [Pro Git Book — Rewriting History](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History)
+
+- [Slides](https://github.com/2KAbhishek/talks/blob/main/interactive-rebase-guide.md)
 
 ---
 
-## Thanks
+## Thanks 
+
