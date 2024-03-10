@@ -58,3 +58,84 @@ Most Importantly: **Practice!**
 ---
 
 ## Thanks 🙏
+
+---
+
+## fizzbuzz
+
+### Test Code
+
+```javascript
+describe('fizzbuzz', () => {
+  const fizzbuzz = require('../src/fizzbuzz');
+  it('returns the argument if its not divisible by 3 or 5', async () => {
+    expect(fizzbuzz(4)).toBe(4);
+  });
+
+  it('returns fizz if the argument is divisible by 3', async () => {
+    expect(fizzbuzz(6)).toBe('fizz');
+  });
+
+  it('returns buzz if the argument is divisible by 5', async () => {
+    expect(fizzbuzz(10)).toBe('buzz');
+  });
+
+  it('returns fizzbuzz if argument is divisible by 3 and 5', async () => {
+    expect(fizzbuzz(30)).toBe('fizzbuzz');
+  });
+});
+```
+
+### Implementation
+
+```javascript
+function fizzbuzz(num) {
+  if (num % 15 == 0) return 'fizzbuzz';
+  if (num % 5 == 0) return 'buzz';
+  if (num % 3 == 0) return 'fizz';
+  return num;
+}
+
+module.exports = fizzbuzz;
+```
+
+---
+
+## validatePassword
+
+### Test Code
+
+```javascript
+describe('validatePassword', () => {
+  const validatePassword = require('../src/validatePassword');
+
+  it('returns false if password length is less than 8', async () => {
+    expect(validatePassword('pass')).toEqual(false);
+  });
+
+  it('returns true if password length is more than 8, contains a number and a uppercase char', async () => {
+    expect(validatePassword('Password12')).toEqual(true);
+  });
+
+  it('returns false if password does not contain at least one number', async () => {
+    expect(validatePassword('password')).toEqual(false);
+  });
+
+  it('returns false if password does not contain at least one uppercase char', async () => {
+    expect(validatePassword('password12')).toEqual(false);
+  });
+});
+```
+
+### Implementation
+
+```javascript
+function validatePassword(password) {
+  const isValidLength = password.length >= 8;
+  const hasNumber = /[0-9]/g.test(password);
+  const hasUppercase = /[A-Z]/g.test(password);
+  return isValidLength && hasNumber && hasUppercase;
+}
+
+module.exports = validatePassword;
+```
