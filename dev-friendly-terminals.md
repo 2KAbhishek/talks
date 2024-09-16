@@ -1,22 +1,47 @@
 # Dev Friendly Terminals
 
 **Abhishek Keshri**
+
 Terminal lover, tooling enthusiast
 
 ---
 
 ## Things we will cover
 
+- Configuration: aliases, functions, and dotfiles
 - Informational prompt - Powerlevel10k / Oh My Posh
 - Directory jumping - zoxide
 - Fuzzy finding - fzf
 - The best git experience - lazygit
 - Terminal multiplexer - tmux
+- Runtime management - mise
 - Getting help on the terminal - tldr
 - A better ls - exa
 - Searching - ripgrep
 - A better cat - bat
 - A better diff - delta
+
+---
+
+### **Configuration: Aliases, Functions, and Dotfiles**
+
+- **Aliases**: Shortcuts for frequently used commands
+  Example: `alias ll='ls -la'`
+
+- **Functions**: Custom logic encapsulated into reusable commands
+  Example:
+
+  ```bash
+  function mkcd() {
+    mkdir -p "$1" && cd "$1"
+  }
+  ```
+
+- **Dotfiles**: Configuration files for customizing shell behavior
+  Example: `.zshrc`, `.bashrc`, `.vimrc`
+
+- **Version control**: Manage dotfiles in a Git repository for portability
+  Example: `git clone your-dotfiles-repo ~/.dotfiles`
 
 ---
 
@@ -62,6 +87,15 @@ Terminal lover, tooling enthusiast
 - Persistent sessions that can survive SSH disconnects
 - Customize layouts for specific tasks or workflows
 - Enhances multitasking and session management in the terminal
+
+---
+
+### **Runtime Management - Mise**
+
+- Simplifies switching between different versions of tools (e.g., Node, Python)
+- Manages environments per project or globally
+- Allows seamless integration with various runtime managers (asdf, pyenv, etc.)
+- Reduces version conflicts and ensures consistent runtime environments
 
 ---
 
