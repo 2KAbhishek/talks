@@ -9,17 +9,17 @@ Terminal lover, tooling enthusiast
 ## Things we will cover
 
 - Configuration: aliases, functions, and dotfiles
-- Informational prompt - Powerlevel10k / Oh My Posh
-- Directory jumping - zoxide
-- Fuzzy finding - fzf
-- The best git experience - lazygit
-- Terminal multiplexer - tmux
-- Runtime management - mise
-- Getting help on the terminal - tldr
-- A better ls - exa
-- Searching - ripgrep
-- A better cat - bat
-- A better diff - delta
+- Informational prompt - [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh), [Powerlevel10k](https://github.com/romkatv/powerlevel10k) / [Oh My Posh](https://github.com/JanDeDobbeleer/oh-my-posh)
+- Directory jumping - [zoxide](https://github.com/ajeetdsouza/zoxide)
+- Fuzzy finding - [fzf](https://github.com/junegunn/fzf)
+- The best git experience - [lazygit](https://github.com/jesseduffield/lazygit)
+- Terminal multiplexer - [tmux](https://github.com/tmux/tmux)
+- Runtime management - [mise](https://github.com/misejs/mise)
+- Getting help on the terminal - [tldr](https://github.com/tldr-pages/tldr)
+- A better ls - [eza](https://github.com/eza-community/eza)
+- Searching - [ripgrep](https://github.com/BurntSushi/ripgrep)
+- A better cat - [bat](https://github.com/sharkdp/bat)
+- A better diff - [delta](https://github.com/dandavison/delta)
 
 ---
 
@@ -146,10 +146,11 @@ Terminal lover, tooling enthusiast
 
 ### **Conclusion**
 
-For more tools and tips, check out the [Terminal Trove](https://terminaltrove.com/)
+For more tools and tips, check out [Terminal Trove](https://terminaltrove.com/)
 
 My workflows and configs:
 
-- [dots2k](https://github.com/2kabhishek/dots2k)
-- [mac2k](https://github.com/2kabhishek/mac2k)
-- [win2k](https://github.com/2kabhishek/win2k)
+- [dots2k](https://github.com/2kabhishek/dots2k) for Linux
+- [mac2k](https://github.com/2kabhishek/mac2k) for macOS
+- [win2k](https://github.com/2kabhishek/win2k) for Windows
+
