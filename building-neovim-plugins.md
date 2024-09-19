@@ -1,7 +1,9 @@
 # Building Neovim Plugins: A Journey from Novice to Pro
 
 **Abhishek Keshri**
-Terminal lover, Neovim enthusiast
+
+> Terminal lover, Developer tooling enthusiast
+
 [GitHub](https://github.com/2kabhishek) | [X](https://x.com/2kabhishek)
 
 ---
@@ -21,54 +23,23 @@ Terminal lover, Neovim enthusiast
 
 ---
 
-## Plugin Development: Getting Started
+## Plugin Development: Preqrequisites
 
-- **Step 1: The Development Environment**
+- **The Development Environment**
   - Lazy.nvim and Lua
   - A ready to use plugin template: [template.nvim](https://github.com/2kabhishek/template.nvim)
-
-- **Demo:**
   - Overview of a plugin's directory structure
 
-```bash
-     .
-    ├──  doc
-    │  └──  images
-    ├──  lua
-    │  ├──  template
-    │  └──  template.lua
-    ├──  plugin
-    │  └──  template.lua
-    ├──  tests
-    │  ├──  template
-    │  └──  init.lua
-    ├──  .github
-    │  ├──  ISSUE_TEMPLATE
-    │  └──  workflows
-    ├──  LICENSE
-    ├──  Makefile
-    ├──  .gitignore
-    ├──  README.md
-    └──  .stylua.toml
-```
+> What do you want to build?
 
 ---
 
 ## Your First Plugin
 
-- **Step 2: Your First Plugin**
-  - How do I?
-    - Define a command
-    - Map keys to functionality
-    - Add user configuration
-
----
-
-## Best Practices
-
-- Separation of logic: commands vs config
-- Avoid polluting global scope
-- Use Neovim’s API effectively
+- How do I?
+  - Define a command
+  - Map keys to functionality
+  - Add user configuration
 
 ---
 
@@ -79,16 +50,26 @@ Terminal lover, Neovim enthusiast
   - Integration with external tools (Git, Docker, etc.)
   - Using Treesitter and LSP for powerful editing capabilities
 
-- **Demo:**
-  - Showcase a plugin with real-world functionality (e.g., integrating with a CI tool or automating a workflow)
+---
+
+## Best Practices
+
+- Document everything, all commands, configurations, and keybindings
+- Test all behavior, use CI to automate testing
+- Mind the performance, minimize blocking operations, use async APIs
+- Respect user configuration, provide sensible defaults, and allow customization
+- Separation of logic, use modules for different functionalities
+- Avoid polluting global scope
+- Use Neovim’s API effectively
+
 ---
 
 ## Publishing & Sharing Plugins
 
 - **Step-by-Step:**
+  - Writing documentation
   - Publishing on GitHub
   - Adding to [awesome-neovim](https://github.com/rockerBOO/awesome-neovim)
-  - Writing documentation
   - Encouraging contributions and maintaining your plugin
 
 ---
@@ -108,13 +89,13 @@ Terminal lover, Neovim enthusiast
   - Questions about plugin development?
   - Challenges in starting out?
   - Ideas you want to explore?
-    - Are there any plugins you want to build?
 
 ---
 
 ## Thank You!
 
-- **Closing Remarks:**
-  - Let's build more plugins together!
+**Let's build more plugins together!**
 
-- Feel free to reach out for help or collaboration: [All my links](https://2kabhishek.github.io/links)
+Feel free to reach out for questions, ideas or just to chat.
+
+[talk slides](https://github.com/2kabhishek/talks/blob/main/building-neovim-plugins.md)
