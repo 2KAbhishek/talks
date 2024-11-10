@@ -6,9 +6,11 @@
 
 [GitHub](https://github.com/2kabhishek) | [X](https://x.com/2kabhishek)
 
-- I work at Incubyte
-- From a small town in India, Rampurhat
-- Worked remotely for all my professional career (4 Years)
+- I work at Incubyte as a Tech Lead / Software Craftsperson
+- Worked remotely for my entire career (4 years)
+- From a small town in West Bengal, India: Rampurhat
+- Grew up on the internet, self-taught programmer
+- Love FOSS and the terminal
 
 ---
 
@@ -35,7 +37,7 @@
 - Integration with third-party services
 - Contribute to the ecosystem
 
-> At the end of this talk, I'd like you to try building plugins
+> At the end of this talk, I'd like you to try building plugins of your own
 
 ---
 
@@ -45,7 +47,32 @@
 
 - Lazy.nvim and Lua
 - A ready to use plugin template: [template.nvim](https://github.com/2kabhishek/template.nvim)
-- Overview of a plugin's directory structure
+
+---
+
+## Overview of a Plugin's directory structure
+
+```
+     template.nvim
+    ├──  doc
+    │  └──  template.txt <- vim doc, visible with :help
+    ├──  lua
+    │  ├──  template
+    │  │  ├──  commands.lua <- commands and keymaps
+    │  │  ├──  config.lua   <- user configuration
+    │  │  └──  module.lua   <- lua modules
+    │  └──  template.lua    <- plugin entry point
+    ├──  tests
+    │  ├──  init.lua        <- test setup
+    │  └──  module_spec.lua <- module tests
+    ├──  .github
+    │  └──  workflows
+    │     ├──  ci.yml       <- lint and test
+    │     └──  docs.yml     <- docs generation
+    ├──  Makefile           <- quick commands
+    ├──  README.md          <- plugin documentation
+    └──  .stylua.toml       <- lua formatter config
+```
 
 ---
 
@@ -53,11 +80,78 @@
 
 What kind of things can you do with a plugin?
 
-- Define a command
-- Map keys to functionality
-- Add user configuration
+- Add commands to perform tasks
+- Add keymaps to trigger commands quickly
+- Add user configuration to customize behavior
 
 > What do you want to build?
+
+---
+
+## Add commands
+
+```lua
+    vim.api.nvim_create_user_command('OctoRepos', function(opts)
+        local user_arg, sort_arg, type_arg = '', '', ''
+
+        for _, arg in ipairs(vim.split(opts.args, ' ')) do
+            if arg:match('^sort:') then
+                sort_arg = arg:sub(6)
+            elseif arg:match('^type:') then
+                type_arg = arg:sub(6)
+            else
+                user_arg = arg
+            end
+        end
+
+        repos.show_repos(user_arg, sort_arg, type_arg)
+    end, { nargs = '*' })
+```
+
+---
+
+## Add keymaps
+
+```lua
+    if config.add_default_keybindings then
+        local function add_keymap(keys, cmd, desc)
+            vim.api.nvim_set_keymap('n', keys, cmd, { noremap = true, silent = true, desc = desc })
+        end
+
+        add_keymap('<leader>goo', ':OctoRepos<CR>', 'All Repos')
+        add_keymap('<leader>gos', ':OctoRepos sort:stars<CR>', 'Top Starred Repos')
+        add_keymap('<leader>goi', ':OctoRepos sort:issues<CR>', 'Repos With Issues')
+        add_keymap('<leader>gou', ':OctoRepos sort:updated<CR>', 'Recently Updated Repos')
+        add_keymap('<leader>gop', ':OctoRepos type:private<CR>', 'Private Repos')
+        add_keymap('<leader>gof', ':OctoRepos type:fork<CR>', 'Forked Repos')
+    end
+```
+
+---
+
+## Add user configuration
+
+```lua
+    ---@class octohub.config
+    ---@field sort_repos_by string : Sort repositories by various params
+    ---@field repo_type string : Type of repositories to display
+    ---@field repo_cache_timeout number : Time in seconds to cache repositories
+    ---@field add_default_keybindings boolean : Whether to add default keybindings
+    local config = {
+        sort_repos_by = '',
+        repo_type = '',
+        repo_cache_timeout = 3600 * 24 * 7,
+        add_default_keybindings = true,
+    }
+
+    ---@type octohub.config
+    M.config = config
+
+    ---@param args octohub.config
+    M.setup = function(args)
+        M.config = vim.tbl_deep_extend('force', M.config, args or {})
+    end
+```
 
 ---
 
@@ -68,26 +162,19 @@ What kind of things can you do with a plugin?
 - Asynchronous APIs (for background tasks)
 - Integration with external tools (Git, Docker, etc.)
 - Using Treesitter and LSP for powerful editing capabilities
+- More!
 
-> plenary.nvim, utils.nvim
+> Useful plugins: plenary.nvim, utils.nvim
 
 ---
 
 ## Best Practices
 
+- Publish your plugin on GitHub and add it to [awesome-neovim](https://github.com/rockerBOO/awesome-neovim)
 - Respect user configuration, provide sensible defaults, and allow customization
 - Document everything, all commands, configurations, and keybindings
 - Test all behavior, use CI to automate testing
 - Mind the performance, minimize blocking operations, use async APIs
-- Separation of logic, use modules for different functionalities
-- Use Neovim’s API effectively
-
----
-
-## Publishing & Sharing Plugins
-
-- Publishing on GitHub
-- Adding to [awesome-neovim](https://github.com/rockerBOO/awesome-neovim)
 - Encourage contributions, actively maintain your plugin
 
 ---
