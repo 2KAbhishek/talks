@@ -1,20 +1,17 @@
-# Building Neovim Plugins: A Journey from Novice to Pro
+# Building Neovim Plugins: A Journey from Novice to Pro 
 
 **Abhishek Keshri**
 
-> Terminal lover, Developer tooling enthusiast
-
 [GitHub](https://github.com/2kabhishek) | [X](https://x.com/2kabhishek)
 
-- I work at Incubyte as a Tech Lead / Software Craftsperson
-- Worked remotely for my entire career (4 years)
-- From a small town in West Bengal, India: Rampurhat
-- Grew up on the internet, self-taught programmer
-- Love FOSS and the terminal
+-  I work at Incubyte as a Tech Lead / Software Craftsperson
+-  Worked remotely for my entire career (4 years)
+-  From a small town in West Bengal, India: Rampurhat
+- ♥ Love FOSS and the terminal
 
 ---
 
-## My (Neo)Vim Journey
+## My (Neo)Vim Journey 
 
 - Vim (2018-2021) -> Neovim (2021-)
 
@@ -30,7 +27,7 @@
 
 ---
 
-## Why Plugin Development?
+## Why Plugin Development? 
 
 - Enhance productivity, Automating tasks
 - Customize your workflow, Custom commands and shortcuts
@@ -41,7 +38,7 @@
 
 ---
 
-## Plugin Development: Pre-requisites
+## Plugin Development: Pre-requisites 
 
 **The Development Environment**
 
@@ -50,7 +47,7 @@
 
 ---
 
-## Overview of a Plugin's directory structure
+## Overview of a Plugin's Structure 
 
 ```
      template.nvim
@@ -76,7 +73,7 @@
 
 ---
 
-## Your First Plugin
+## Your First Plugin 
 
 What kind of things can you do with a plugin?
 
@@ -88,7 +85,7 @@ What kind of things can you do with a plugin?
 
 ---
 
-## Add commands
+## Add Commands 
 
 ```lua
     vim.api.nvim_create_user_command('OctoRepos', function(opts)
@@ -110,7 +107,7 @@ What kind of things can you do with a plugin?
 
 ---
 
-## Add keymaps
+## Add Keymaps 
 
 ```lua
     if config.add_default_keybindings then
@@ -129,7 +126,7 @@ What kind of things can you do with a plugin?
 
 ---
 
-## Add user configuration
+## Add Configurations 
 
 ```lua
     ---@class octohub.config
@@ -155,7 +152,7 @@ What kind of things can you do with a plugin?
 
 ---
 
-## Building Advanced Plugins
+## Building Advanced Plugins 
 
 **Advanced Features:**
 
@@ -168,7 +165,7 @@ What kind of things can you do with a plugin?
 
 ---
 
-## Best Practices
+## Best Practices 
 
 - Publish your plugin on GitHub and add it to [awesome-neovim](https://github.com/rockerBOO/awesome-neovim)
 - Respect user configuration, provide sensible defaults, and allow customization
@@ -179,8 +176,9 @@ What kind of things can you do with a plugin?
 
 ---
 
-## Tips for Aspiring Plugin Authors
+## Tips for Aspiring Plugin Authors 
 
+- **Use What You Have**: See if you can bring out things you use most often as plugins.
 - **Start Simple:** Don’t aim for perfection, begin with a small useful feature.
 - **Iterate:** Learn by improving your plugin based on user feedback.
 - **Collaborate:** Leverage the community for ideas and contributions.
@@ -188,7 +186,7 @@ What kind of things can you do with a plugin?
 
 ---
 
-## Thank You
+## Thank You 
 
 **Let's build more plugins together**
 
