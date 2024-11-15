@@ -1,98 +1,186 @@
-# Building Neovim Plugins: A Journey from Novice to Pro
+# Building Neovim Plugins: A Journey from Novice to Pro 
 
 **Abhishek Keshri**
 
-> Terminal lover, Developer tooling enthusiast
-
 [GitHub](https://github.com/2kabhishek) | [X](https://x.com/2kabhishek)
 
----
-
-## Introduction
-
-- **Why Neovim?**
-  - Lightweight, highly customizable, Lua-based plugin system
-  - Seamless integration with external tools
-  - Wide community support
-
-- **Why Plugin Development?**
-  - Enhance productivity, Automating tasks
-  - Customize your workflow, Custom commands and shortcuts
-  - Integration with third-party services
-  - Contribute to the ecosystem
+-  I work at Incubyte as a Tech Lead / Software Craftsperson
+-  Worked remotely for my entire career (4 years)
+-  From a small town in West Bengal, India: Rampurhat
+- ♥ Love FOSS and the terminal
 
 ---
 
-## Plugin Development: Preqrequisites
+## My (Neo)Vim Journey 
 
-- **The Development Environment**
-  - Lazy.nvim and Lua
-  - A ready to use plugin template: [template.nvim](https://github.com/2kabhishek/template.nvim)
-  - Overview of a plugin's directory structure
+- Vim (2018-2021) -> Neovim (2021-)
+
+### Plugins I've Built
+
+- co-author.nvim: Add git co-authors
+- nerdy.nvim: Nerd glyph finder
+- tdo.nvim: Notes and todos
+- termim.nvim: Improved terminal integration
+- markit.nvim: Simpler marks
+- template.nvim: Neovim plugin starter
+- utils.nvim: Utilities for plugin devs
+- octohub.nvim: Manage GitHub repos easily
+- exercism.nvim: Exercism.io integration
+
+---
+
+## Why Plugin Development? 
+
+- Enhance productivity, Automating tasks
+- Customize your workflow, Custom commands and shortcuts
+- Integration with third-party services
+- Contribute to the ecosystem
+
+> At the end of this talk, I'd like you to try building plugins of your own
+
+---
+
+## Plugin Development: Pre-requisites 
+
+**The Development Environment**
+
+- Lazy.nvim and Lua
+- A ready to use plugin template: [template.nvim](https://github.com/2kabhishek/template.nvim)
+
+---
+
+## Overview of a Plugin's Structure 
+
+```
+     template.nvim
+    ├──  doc
+    │  └──  template.txt <- vim doc, visible with :help
+    ├──  lua
+    │  ├──  template
+    │  │  ├──  commands.lua <- commands and keymaps
+    │  │  ├──  config.lua   <- user configuration
+    │  │  └──  module.lua   <- lua modules
+    │  └──  template.lua    <- plugin entry point
+    ├──  tests
+    │  ├──  init.lua        <- test setup
+    │  └──  module_spec.lua <- module tests
+    ├──  .github
+    │  └──  workflows
+    │     ├──  ci.yml       <- lint and test
+    │     └──  docs.yml     <- docs generation
+    ├──  Makefile           <- quick commands
+    ├──  README.md          <- plugin documentation
+    └──  .stylua.toml       <- lua formatter config
+```
+
+---
+
+## Your First Plugin 
+
+What kind of things can you do with a plugin?
+
+- Add commands to perform tasks
+- Add keymaps to trigger commands quickly
+- Add user configuration to customize behavior
 
 > What do you want to build?
 
 ---
 
-## Your First Plugin
+## Add Commands 
 
-- How do I?
-  - Define a command
-  - Map keys to functionality
-  - Add user configuration
+```lua
+    vim.api.nvim_create_user_command('OctoRepos', function(opts)
+        local user_arg, sort_arg, type_arg = '', '', ''
+
+        for _, arg in ipairs(vim.split(opts.args, ' ')) do
+            if arg:match('^sort:') then
+                sort_arg = arg:sub(6)
+            elseif arg:match('^type:') then
+                type_arg = arg:sub(6)
+            else
+                user_arg = arg
+            end
+        end
+
+        repos.show_repos(user_arg, sort_arg, type_arg)
+    end, { nargs = '*' })
+```
 
 ---
 
-## Building Advanced Plugins
+## Add Keymaps 
 
-- **Advanced Features:**
-  - Asynchronous APIs (for background tasks)
-  - Integration with external tools (Git, Docker, etc.)
-  - Using Treesitter and LSP for powerful editing capabilities
+```lua
+    if config.add_default_keybindings then
+        local function add_keymap(keys, cmd, desc)
+            vim.api.nvim_set_keymap('n', keys, cmd, { noremap = true, silent = true, desc = desc })
+        end
+
+        add_keymap('<leader>goo', ':OctoRepos<CR>', 'All Repos')
+        add_keymap('<leader>gos', ':OctoRepos sort:stars<CR>', 'Top Starred Repos')
+        add_keymap('<leader>goi', ':OctoRepos sort:issues<CR>', 'Repos With Issues')
+        add_keymap('<leader>gou', ':OctoRepos sort:updated<CR>', 'Recently Updated Repos')
+        add_keymap('<leader>gop', ':OctoRepos type:private<CR>', 'Private Repos')
+        add_keymap('<leader>gof', ':OctoRepos type:fork<CR>', 'Forked Repos')
+    end
+```
 
 ---
 
-## Best Practices
+## Add Configurations 
 
-- Document everything, all commands, configurations, and keybindings
-- Test all behavior, use CI to automate testing
-- Mind the performance, minimize blocking operations, use async APIs
+```lua
+    ---@class octohub.config
+    ---@field sort_repos_by string : Sort repositories by various params
+    ---@field repo_type string : Type of repositories to display
+    ---@field repo_cache_timeout number : Time in seconds to cache repositories
+    ---@field add_default_keybindings boolean : Whether to add default keybindings
+    local config = {
+        sort_repos_by = '',
+        repo_type = '',
+        repo_cache_timeout = 3600 * 24 * 7,
+        add_default_keybindings = true,
+    }
+
+    ---@type octohub.config
+    M.config = config
+
+    ---@param args octohub.config
+    M.setup = function(args)
+        M.config = vim.tbl_deep_extend('force', M.config, args or {})
+    end
+```
+
+---
+
+## Building Advanced Plugins 
+
+**Advanced Features:**
+
+- Asynchronous APIs (for background tasks)
+- Integration with external tools (Git, Docker, etc.)
+- Using Treesitter and LSP for powerful editing capabilities
+- More!
+
+> Useful plugins: plenary.nvim, utils.nvim
+
+---
+
+## Tips for Plugin Authors 
+
+- Try to bring out parts of your config you find useful as plugins.
 - Respect user configuration, provide sensible defaults, and allow customization
-- Separation of logic, use modules for different functionalities
-- Avoid polluting global scope
-- Use Neovim’s API effectively
+- Mind the performance, minimize blocking operations, use async APIs for blocking tasks
+- Document everything, all commands, configurations, and keybindings, automate vimdoc generation
+- Test critical behavior, use CI to automate testing
+- Publish your plugin on GitHub and add it to [awesome-neovim](https://github.com/rockerBOO/awesome-neovim)
+
+> **Have Fun!**
 
 ---
 
-## Publishing & Sharing Plugins
-
-- **Step-by-Step:**
-  - Writing documentation
-  - Publishing on GitHub
-  - Adding to [awesome-neovim](https://github.com/rockerBOO/awesome-neovim)
-  - Encouraging contributions and maintaining your plugin
-
----
-
-## Tips for Aspiring Plugin Authors
-
-- **Start Simple:** Don’t aim for perfection, begin with a small useful feature.
-- **Iterate:** Learn by improving your plugin based on user feedback.
-- **Collaborate:** Leverage the community for ideas and contributions.
-- **Have Fun:** Enjoy the process of learning and contributing!
-
----
-
-## Q&A
-
-- **Let’s Talk:**
-  - Questions about plugin development?
-  - Challenges in starting out?
-  - Ideas you want to explore?
-
----
-
-## Thank You!
+## Thank You 
 
 **Let's build more plugins together!**
 
