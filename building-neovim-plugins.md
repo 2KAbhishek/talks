@@ -22,6 +22,8 @@
 - tdo.nvim: Notes and todos
 - termim.nvim: Improved terminal integration
 - markit.nvim: Simpler marks
+- template.nvim: Neovim plugin starter
+- utils.nvim: Utilities for plugin devs
 - octohub.nvim: Manage GitHub repos easily
 - exercism.nvim: Exercism.io integration
 
@@ -165,30 +167,22 @@ What kind of things can you do with a plugin?
 
 ---
 
-## Best Practices 
+## Tips for Plugin Authors 
 
-- Publish your plugin on GitHub and add it to [awesome-neovim](https://github.com/rockerBOO/awesome-neovim)
+- Try to bring out parts of your config you find useful as plugins.
 - Respect user configuration, provide sensible defaults, and allow customization
-- Document everything, all commands, configurations, and keybindings
-- Test all behavior, use CI to automate testing
-- Mind the performance, minimize blocking operations, use async APIs
-- Encourage contributions, actively maintain your plugin
+- Mind the performance, minimize blocking operations, use async APIs for blocking tasks
+- Document everything, all commands, configurations, and keybindings, automate vimdoc generation
+- Test critical behavior, use CI to automate testing
+- Publish your plugin on GitHub and add it to [awesome-neovim](https://github.com/rockerBOO/awesome-neovim)
 
----
-
-## Tips for Aspiring Plugin Authors 
-
-- **Use What You Have**: See if you can bring out things you use most often as plugins.
-- **Start Simple:** Don’t aim for perfection, begin with a small useful feature.
-- **Iterate:** Learn by improving your plugin based on user feedback.
-- **Collaborate:** Leverage the community for ideas and contributions.
-- **Have Fun:** Enjoy the process of learning and contributing
+> **Have Fun!**
 
 ---
 
 ## Thank You 
 
-**Let's build more plugins together**
+**Let's build more plugins together!**
 
 Feel free to reach out for questions, ideas or just to chat.
 
