@@ -187,3 +187,5 @@ What kind of things can you do with a plugin?
 Feel free to reach out for questions, ideas or just to chat.
 
 [talk slides](https://github.com/2kabhishek/talks/blob/main/building-neovim-plugins.md)
+
+> for VimConf 2024, Akihabara, Tokyo, Japan
