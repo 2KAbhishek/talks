@@ -33,8 +33,6 @@
 - **Enhance Integration**: Connect seamlessly with other tools.
 - **Empower the Community**: Share innovations and contribute to Neovim's growth.
 
-> At the end of this talk, I'd like you to try building plugins of your own
-
 ---
 
 ## Plugin Development: Pre-requisites 
@@ -43,21 +41,21 @@
 - An idea
   - Anything that interrupts your flow state
   - Any useful functions part of your configs
-- [Functional Lua knowledge](https://github.com/nanotee/nvim-lua-guide)
+- Functional Lua knowledge (`:h lua-guide`)
 - Lazy.nvim
 - A ready to use plugin template
+
+> Think about a plugin that you want to build
 
 ---
 
 ## Your First Plugin 
 
-What kind of things can you do with a plugin?
+Lets start with the basics
 
 - Add commands to perform tasks
 - Add keymaps to trigger commands quickly
 - Add user configuration to customize behavior
-
-> What do you want to build?
 
 ---
 
@@ -98,7 +96,7 @@ What kind of things can you do with a plugin?
         add_keymap('<leader>goi', ':OctoRepos sort:issues<CR>', 'Repos With Issues')
         add_keymap('<leader>gou', ':OctoRepos sort:updated<CR>', 'Recently Updated Repos')
         add_keymap('<leader>gop', ':OctoRepos type:private<CR>', 'Private Repos')
-        add_keymap('<leader>gof', ':OctoRepos type:fork<CR>', 'Forked Repos')
+        add_keymap('<leader>gof', ':OctoRepos type:fork sort:issues<CR>', 'Forked Repos')
     end
 ```
 
@@ -187,7 +185,7 @@ What kind of things can you do with a plugin?
 - **Mind the Performance**: Minimize blocking operations, use async APIs for blocking tasks
 - **Document Everything**: all commands, configurations, and keybindings, automate vimdoc generation
 - **Automated Testing**: Test critical behavior, use CI to automate testing
-- **Share and Care**: Publish and maintain your plugin on GitHub and add it to [awesome-neovim](https://github.com/rockerBOO/awesome-neovim)
+- **Share and Care**: Publish and maintain your plugin on GitHub and awesome-neovim
 
 > **Most Important: Have Fun!**
 
@@ -197,8 +195,10 @@ What kind of things can you do with a plugin?
 
 **Let's build the Neovim ecosystem together!**
 
-[talk slides](https://github.com/2kabhishek/talks/blob/main/building-neovim-plugins.md)
+Dive into plugin development, start by building and sharing your own plugin.
 
-Feel free to reach out to me for questions, ideas or feedback.
+Feel free to reach out to me for any questions, ideas or feedback.
+
+[slides](https://github.com/2kabhishek/talks/blob/main/building-neovim-plugins.md)
 
 > for VimConf 2024, Akihabara, Tokyo, Japan
