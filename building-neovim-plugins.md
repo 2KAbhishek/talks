@@ -142,7 +142,7 @@ What kind of things can you do with a plugin?
 ```
      template.nvim
     ├──  doc
-    │  └──  template.txt <- vim doc, visible with :help
+    │  └──  template.txt    <- vimdoc, visible with :help
     ├──  lua
     │  ├──  template
     │  │  ├──  commands.lua <- commands and keymaps
