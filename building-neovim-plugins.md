@@ -42,36 +42,13 @@
 
 ## Plugin Development: Pre-requisites 
 
-**The Development Environment**
-
-- Lazy.nvim and Lua
+- Neovim
+- An idea
+  - Anything that interrupts your flow state
+  - Any useful functions part of your configs
+- [Functional Lua knowledge](https://github.com/nanotee/nvim-lua-guide)
+- Lazy.nvim
 - A ready to use plugin template: [template.nvim](https://github.com/2kabhishek/template.nvim)
-
----
-
-## Overview of a Plugin's Structure 
-
-```
-     template.nvim
-    ├──  doc
-    │  └──  template.txt <- vim doc, visible with :help
-    ├──  lua
-    │  ├──  template
-    │  │  ├──  commands.lua <- commands and keymaps
-    │  │  ├──  config.lua   <- user configuration
-    │  │  └──  module.lua   <- lua modules
-    │  └──  template.lua    <- plugin entry point
-    ├──  tests
-    │  ├──  init.lua        <- test setup
-    │  └──  module_spec.lua <- module tests
-    ├──  .github
-    │  └──  workflows
-    │     ├──  ci.yml       <- lint and test
-    │     └──  docs.yml     <- docs generation
-    ├──  Makefile           <- quick commands
-    ├──  README.md          <- plugin documentation
-    └──  .stylua.toml       <- lua formatter config
-```
 
 ---
 
@@ -107,6 +84,8 @@ What kind of things can you do with a plugin?
     end, { nargs = '*' })
 ```
 
+> From commands.lua in octohub.nvim
+
 ---
 
 ## Add Keymaps 
@@ -125,6 +104,8 @@ What kind of things can you do with a plugin?
         add_keymap('<leader>gof', ':OctoRepos type:fork<CR>', 'Forked Repos')
     end
 ```
+
+> From commands.lua in octohub.nvim
 
 ---
 
@@ -152,24 +133,56 @@ What kind of things can you do with a plugin?
     end
 ```
 
+> From config.lua in octohub.nvim
+
+---
+
+## Overview of a Plugin's Structure 
+
+```
+     template.nvim
+    ├──  doc
+    │  └──  template.txt <- vim doc, visible with :help
+    ├──  lua
+    │  ├──  template
+    │  │  ├──  commands.lua <- commands and keymaps
+    │  │  ├──  config.lua   <- user configuration
+    │  │  └──  module.lua   <- lua modules
+    │  └──  template.lua    <- plugin entry point
+    ├──  tests
+    │  ├──  init.lua        <- test setup
+    │  └──  module_spec.lua <- module tests
+    ├──  .github
+    │  └──  workflows
+    │     ├──  ci.yml       <- lint and test
+    │     └──  docs.yml     <- docs generation
+    ├──  Makefile           <- quick commands
+    ├──  README.md          <- plugin documentation
+    └──  .stylua.toml       <- lua formatter config
+```
+
 ---
 
 ## Building Advanced Plugins 
 
-**Advanced Features:**
-
 - Asynchronous APIs (for background tasks)
 - Integration with external tools (Git, Docker, etc.)
+- Building complicated UIs within Neovim
 - Using Treesitter and LSP for powerful editing capabilities
-- More!
 
-> Useful plugins: plenary.nvim, utils.nvim
+### Useful Plugins
+
+- plenary.nvim
+- utils.nvim
+- nui.nvim
+- dressing.nvim
+- lazydev.nvim
+- nvim-luapad
 
 ---
 
 ## Tips for Plugin Authors 
 
-- Try to bring out parts of your config you find useful as plugins.
 - Respect user configuration, provide sensible defaults, and allow customization
 - Mind the performance, minimize blocking operations, use async APIs for blocking tasks
 - Document everything, all commands, configurations, and keybindings, automate vimdoc generation
