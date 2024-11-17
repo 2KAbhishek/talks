@@ -1,6 +1,6 @@
 # Building Neovim Plugins: A Journey from Novice to Pro 
 
-**Abhishek Keshri**
+**Abhishek Keshri aka 2KAbhishek**
 
 [GitHub](https://github.com/2kabhishek) | [X](https://x.com/2kabhishek)
 
