@@ -4,9 +4,8 @@
 
 [GitHub](https://github.com/2kabhishek) | [X](https://x.com/2kabhishek)
 
--  I work at Incubyte as a Tech Lead / Software Craftsperson
--  Worked remotely for my entire career (4 years)
--  From a small town in West Bengal, India: Rampurhat
+-  Tech Lead at Incubyte
+-  From Rampurhat, West Bengal, India
 - ♥ Love FOSS and the terminal
 
 ---
@@ -22,8 +21,6 @@
 - tdo.nvim: Notes and todos
 - termim.nvim: Improved terminal integration
 - markit.nvim: Simpler marks
-- template.nvim: Neovim plugin starter
-- utils.nvim: Utilities for plugin devs
 - octohub.nvim: Manage GitHub repos easily
 - exercism.nvim: Exercism.io integration
 
@@ -31,10 +28,10 @@
 
 ## Why Plugin Development? 
 
-- Enhance productivity, Automating tasks
-- Customize your workflow, Custom commands and shortcuts
-- Integration with third-party services
-- Contribute to the ecosystem
+- **Boost Productivity**: Automate tasks and streamline workflows.
+- **Make Your Own Tools**: Create personalized commands and shortcuts.
+- **Enhance Integration**: Connect seamlessly with other tools.
+- **Empower the Community**: Share innovations and contribute to Neovim's growth.
 
 > At the end of this talk, I'd like you to try building plugins of your own
 
@@ -42,13 +39,13 @@
 
 ## Plugin Development: Pre-requisites 
 
-- Neovim
+- Neovim!
 - An idea
   - Anything that interrupts your flow state
   - Any useful functions part of your configs
 - [Functional Lua knowledge](https://github.com/nanotee/nvim-lua-guide)
 - Lazy.nvim
-- A ready to use plugin template: [template.nvim](https://github.com/2kabhishek/template.nvim)
+- A ready to use plugin template
 
 ---
 
@@ -161,14 +158,17 @@ What kind of things can you do with a plugin?
     └──  .stylua.toml       <- lua formatter config
 ```
 
+> From [template.nvim](https://github.com/2kabhishek/template.nvim)
+
 ---
 
 ## Building Advanced Plugins 
 
 - Asynchronous APIs (for background tasks)
 - Integration with external tools (Git, Docker, etc.)
-- Building complicated UIs within Neovim
+- Building robust UIs within Neovim
 - Using Treesitter and LSP for powerful editing capabilities
+- Anything you can imagine!
 
 ### Useful Plugins
 
@@ -183,22 +183,22 @@ What kind of things can you do with a plugin?
 
 ## Tips for Plugin Authors 
 
-- Respect user configuration, provide sensible defaults, and allow customization
-- Mind the performance, minimize blocking operations, use async APIs for blocking tasks
-- Document everything, all commands, configurations, and keybindings, automate vimdoc generation
-- Test critical behavior, use CI to automate testing
-- Publish your plugin on GitHub and add it to [awesome-neovim](https://github.com/rockerBOO/awesome-neovim)
+- **Respect User Configuration**: Provide sensible defaults, and allow customization
+- **Mind the Performance**: Minimize blocking operations, use async APIs for blocking tasks
+- **Document Everything**: all commands, configurations, and keybindings, automate vimdoc generation
+- **Automated Testing**: Test critical behavior, use CI to automate testing
+- **Share and Care**: Publish and maintain your plugin on GitHub and add it to [awesome-neovim](https://github.com/rockerBOO/awesome-neovim)
 
-> **Have Fun!**
+> **Most Important: Have Fun!**
 
 ---
 
-## Thank You 
+## Thank You! 
 
-**Let's build more plugins together!**
-
-Feel free to reach out for questions, ideas or just to chat.
+**Let's build the Neovim ecosystem together!**
 
 [talk slides](https://github.com/2kabhishek/talks/blob/main/building-neovim-plugins.md)
+
+Feel free to reach out to me for questions, ideas or feedback.
 
 > for VimConf 2024, Akihabara, Tokyo, Japan
