@@ -169,10 +169,10 @@ Lets start with the basics
 ### Useful Plugins
 
 - plenary.nvim
-- utils.nvim
 - nui.nvim
 - dressing.nvim
 - lazydev.nvim
+- utils.nvim
 - nvim-luapad
 
 ---
