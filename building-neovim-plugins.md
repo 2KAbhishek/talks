@@ -156,8 +156,6 @@ Lets start with the basics
     └──  .stylua.toml       <- lua formatter config
 ```
 
-> From [template.nvim](https://github.com/2kabhishek/template.nvim)
-
 ---
 
 ## Building Advanced Plugins 
