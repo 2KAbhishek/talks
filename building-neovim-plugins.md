@@ -185,7 +185,7 @@ Lets start with the basics
 - **Mind the Performance**: Avoid blocking operations, use async APIs for blocking tasks
 - **Document Everything**: all commands, configurations, and keybindings, automate vimdoc generation
 - **Automated Testing**: Test critical behavior, use CI to automate testing
-- **Share and Care**: Publish and maintain your plugin on GitHub, work with the community
+- **Share and Care**: Publish and maintain your plugin on GitHub, awesome-neovim, work with the community
 
 > **Most Important: Have Fun!**
 
