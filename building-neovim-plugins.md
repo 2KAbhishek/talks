@@ -179,11 +179,13 @@ Lets start with the basics
 
 ## Tips for Plugin Authors 
 
+- **You are User Zero**: Build plugins you want, use your plugin, and iterate on feedback.
+
 - **Respect User Configuration**: Provide sensible defaults, and allow customization
-- **Mind the Performance**: Minimize blocking operations, use async APIs for blocking tasks
+- **Mind the Performance**: Avoid blocking operations, use async APIs for blocking tasks
 - **Document Everything**: all commands, configurations, and keybindings, automate vimdoc generation
 - **Automated Testing**: Test critical behavior, use CI to automate testing
-- **Share and Care**: Publish and maintain your plugin on GitHub and awesome-neovim
+- **Share and Care**: Publish and maintain your plugin on GitHub, work with the community
 
 > **Most Important: Have Fun!**
 
