@@ -110,12 +110,10 @@ Lets start with the basics
     ---@class octohub.config
     ---@field sort_repos_by string : Sort repositories by various params
     ---@field repo_type string : Type of repositories to display
-    ---@field repo_cache_timeout number : Time in seconds to cache repositories
     ---@field add_default_keybindings boolean : Whether to add default keybindings
     local config = {
         sort_repos_by = '',
         repo_type = '',
-        repo_cache_timeout = 3600 * 24 * 7,
         add_default_keybindings = true,
     }
 
@@ -164,13 +162,11 @@ Lets start with the basics
 - Integration with external tools (Git, Docker, etc.)
 - Building robust UIs within Neovim
 - Using Treesitter and LSP for powerful editing capabilities
-- Anything you can imagine!
 
 ### Useful Plugins
 
 - plenary.nvim
 - nui.nvim
-- dressing.nvim
 - lazydev.nvim
 - utils.nvim
 - nvim-luapad
