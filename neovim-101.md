@@ -18,6 +18,9 @@
 
 - Opening Neovim: `nvim`
 - Learn basics using `:Tutor<CR>`
+- Exit neovim with: `:q<CR>`
+
+> **Important**: Learn vim motions!
 
 ---
 
