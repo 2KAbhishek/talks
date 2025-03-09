@@ -26,8 +26,7 @@
 
 This repo hosts the content of all the talks I'll be doing.
 
-My tool of choice is [slides](https://github.com/maaslalani/slides)
-
+My tool of choice is [slides](https://github.com/maaslalani/slides) or [presenterm](https://github.com/mfontanini/presenterm)
 
 ### 🚀 Getting Talks
 
@@ -41,7 +40,7 @@ slides <talk-filename.md>
 
 Planning to add more talks.
 
-##  Behind The Code
+## Behind The Code
 
 ### 🌈 Inspiration
 
@@ -66,4 +65,3 @@ Wanted a easy way to share my talks.
 | <a href="https://2kabhishek.github.io/projects" target="_blank">Other Projects </a>
 
 </div>
-
