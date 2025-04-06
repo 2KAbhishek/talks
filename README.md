@@ -24,32 +24,25 @@
 
 </div>
 
-This repo hosts the content of all the talks I'll be doing.
+Here's the list of Talks I have done so far.
 
-My tool of choice is [slides](https://github.com/maaslalani/slides) or [presenterm](https://github.com/mfontanini/presenterm)
+## Conference Talks
 
-### 🚀 Getting Talks
+- [Building Neovim Plugins](./decks/building-neovim-plugins.md) for VimConf Japan 2024, [Recording](https://youtu.be/2cFGmiDuNl4?si=quI43f2eapdq7lFu)
+- [The Laziest Neovim](./decks/the-laziest-neovim.md) for NeoVimConf 2023, [Recording](https://youtu.be/FMa3eURbgQ8?si=buVkqTrUSWKgVcGU)
 
-```bash
-git clone https://github.com/2kabhishek/talks
-cd talks
-slides <talk-filename.md>
-```
+## Internal Talks
 
-## What's Next
+Most of these are internal talks I have delivered at [Incubyte](https://incubyte.co)
 
-Planning to add more talks.
+- [Be A 10x](./decks/be-a-10x.md)
+- [GitHub Profile 101](./decks/github-profile-101.md)
+- [Neovim 101](./decks/neovim-101.md)
+- [Dev Friendly Terminals](./decks/dev-friendly-terminals.md)
+- [TDD](./decks/tdd.md)
+- [Interactive Rebase Guide](./decks/interactive-rebase-guide.md)
 
-## Behind The Code
-
-### 🌈 Inspiration
-
-Wanted a easy way to share my talks.
-
-### 🧰 Tooling
-
-- [Dotfiles](https://github.com/2kabhishek/Dotfiles) — Dev Environment
-- [nvim2k](https://github.com/2kabhishek/nvim2k) — Personalized Editor
+My tool of choice to present these talks is [slides](https://github.com/maaslalani/slides) or [presenterm](https://github.com/mfontanini/presenterm)
 
 <hr>
 
