@@ -33,10 +33,12 @@ author: Abhishek Keshri
 <!-- end_slide -->
 <!-- jump_to_middle -->
 
-## Monitor Components
+## Anatomy of a Monitor
 
 - Severity
+  - P1, P2. P3
 - Threshold
+  - Alert and Recovery
 - Outlet
 - Runbook
 
