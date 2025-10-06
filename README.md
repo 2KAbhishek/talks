@@ -41,6 +41,7 @@ Most of these are internal talks I have delivered at [Incubyte](https://incubyte
 - [Dev Friendly Terminals](./decks/dev-friendly-terminals.md)
 - [TDD](./decks/tdd.md)
 - [Interactive Rebase Guide](./decks/interactive-rebase-guide.md)
+- [Monitoring Strategy Foundations](./decks/monitoring-strategy-foundations.md)
 
 My tool of choice to present these talks is [slides](https://github.com/maaslalani/slides) or [presenterm](https://github.com/mfontanini/presenterm)
 
