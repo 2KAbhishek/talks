@@ -36,7 +36,7 @@ author: Abhishek Keshri
 ## Anatomy of a Monitor
 
 - Severity
-  - P1, P2. P3
+  - P1, P2, P3
 - Threshold
   - Alert and Recovery
 - Outlet
