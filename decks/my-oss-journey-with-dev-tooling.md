@@ -77,15 +77,18 @@ Goal: Keep my dev environment efficient and fun
 
 ## What FOSS Taught Me
 
+How to build real software
+
 - Technical depth through real-world problems
+- Backwards compatibility
+- Third party integrations and dependencies
+- Documentation
+- Releases
+
+How to work with people
+
 - Creativity through constraints
 - Networking without networking
-
-- How to build real software
-  - Backwards compatibility
-  - Third party integrations and dependencies
-  - Documentation
-  - Releases
 
 <!-- end_slide -->
 <!-- jump_to_middle -->
@@ -136,9 +139,9 @@ Goal: Keep my dev environment efficient and fun
 
 ## Thank You!
 
-> Any questions?
+- My links: https://2kabhishek.github.io/links/
+- This deck: https://github.com/2KAbhishek/talks/
 
-My links: https://2kabhishek.github.io/links/
-This deck: https://github.com/2KAbhishek/talks/
+> Any questions?
 
 <!-- end_slide -->
