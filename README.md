@@ -30,6 +30,7 @@ Here's the list of Talks I have done so far.
 
 - [Building Neovim Plugins](./decks/building-neovim-plugins.md) for VimConf Japan 2024, [Recording](https://youtu.be/2cFGmiDuNl4?si=quI43f2eapdq7lFu)
 - [The Laziest Neovim](./decks/the-laziest-neovim.md) for NeoVimConf 2023, [Recording](https://youtu.be/FMa3eURbgQ8?si=buVkqTrUSWKgVcGU)
+- [My Open Source Journey with Dev Tooling](./decks/my-oss-journey-with-dev-tooling.md) for IIT Madras, Oct 19 2025
 
 ## Internal Talks
 
