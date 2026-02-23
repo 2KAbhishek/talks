@@ -32,10 +32,10 @@ author: Abhishek Keshri aka 2KAbhishek
 - Master navigation, piping, and redirection
 - Create aliases, functions for repeat tasks
 - Have a useful prompt
+- Package managers
 - Use fuzzy finders
 - Multi pane with tmux
 - Be lazy with git
-- Package managers
 
 <!-- end_slide -->
 <!-- jump_to_middle -->
